@@ -1,0 +1,100 @@
+#containter {
+	width: 85%;
+}
+
+#logo ul{
+	display: inline-block;
+	float: left;
+	clear: left;
+}
+
+nav {
+	display: -webkit-flex;
+	display: flex;
+	height: 50%;
+	width: 100%;
+}
+
+nav ul {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	list-style-type: none;
+	height: 50%;
+	width: 100%;
+}
+
+nav ul li {
+	display: -webkit-flex;
+	display: flex;	
+	-webkit-justify-content: center;
+	justify-content: center;
+	height:50%
+	width: 100%;
+}
+
+nav ul li a {
+	color: black;
+	font-family: 'Vidaloka', serif;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: limegreen;
+	font-size: 2.3em;
+}
+
+#about, #contact {
+	padding: 0 5%;
+}
+body {
+	background-color: #ffffff;
+}
+
+h1 {
+	font-family: 'Vidaloka', serif;
+	color: #33C40E;
+}
+
+h2 {
+	font-family: 'Vidaloka', serif;
+	color: #33C40E;
+
+}
+
+h3 {
+	font-family: 'Vidaloka', serif;
+	color: #33C40E;
+
+}
+
+p {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+footer {
+	width: 100%;
+	background-color: #33C40E;
+}
+
+#contactlist {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	list-style-type: none;
+}
+
+#social {
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+.container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+}
