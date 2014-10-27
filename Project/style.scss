@@ -8,16 +8,19 @@ $darkblue: #0092d7;
 $green: #3ec303;
 $orange: #ee8d09;
 
-h1 {
+h1, 
+h2, 
+h3 {
 	font-family: $header-text;
 	color: $green;
 }
+h1 {
+	color: $green;
+}
 h2 {
-	font-family: $header-text;
 	color: $darkblue;
 }
 h3 {
-	font-family: $header-text;
 	color: $orange;
 }
 
@@ -49,55 +52,45 @@ header {
 
 #logo {
 	display: none;
-	-webkit-flex-flow: column;
-	flex-flow: column;
-	align-items: center;
-	-webkit-align-items: center;
-	list-style-type: none;
-	height: 100%;
-	width: 100%;
-	margin: auto;
-	-webkit-padding-start: 0;
-	& li:first-child {
-		display: flex;
-		display: -webkit-flex;
-		-webkit-flex-flow: column;
-		-webkit-flex-flow: colomn;
-		align-items: center;
-		-webkit-align-items: center;
-	}
 }
-
-
 
 #nav {
 	width: 100%;
 	margin: 0;
-	background-color: $lightblue;
 	ul {
-		padding: 0;
+		display: flex;
+		display: -webkit-flex;
+		flex-flow: column;
+		-webkit-flex-flow: column;
+		padding: 1%;
 		margin: 0;
 		list-style-type: none;
-		height: 100%;
-
 	}
 	ul li {
-		border-bottom: 1px solid grey;
+		border: 1px solid grey;
+		border-radius: 10px;
+		flex-grow: 1;
+		-webkit-flex-grow: 1;
+		box-shadow: 5px 5px 2.5px lightgrey;
+		margin: 1%;
 		p {
 			font-family: $header-text;
 			font-size: 1em;
 		}
 		a {
+			margin: 1%;
 			color: $darkblue;
+			background-color: white;
 			font-family: $header-text;
-			text-decoration: none;
 			display: block;
-			text-align: center;
-			padding: 8px 15px;
-		}
-		a:active {
-			color: $green;
-			background-color: $purple;
+			text-decoration: none;
+			justify-content: flex-start;
+			-webkit-justify-content: flex-start;
+			&:active, 
+			&:hover {
+				background-color: $darkblue;
+				color: white;
+			}
 		}
 	}
 }
@@ -117,11 +110,13 @@ header {
 	-webkit-justify-content: flex-start;
 	width: 100%;
 	padding: 2%;
-
 }
 
 .selected {
-	background-color: $purple;
+	a {
+		background-color: $darkblue;
+		color: white;
+	}
 }
 
 #main_body {
@@ -172,6 +167,58 @@ footer {
 	background-color: $lightblue;
 }
 
-//@media 768
+@media (min-width: 768px) {
+	#container {
+		width: 75%;
+	}
+	#logo {
+		display: flex;
+		display: -webkit-flex;
+		-webkit-flex-flow: row;
+		flex-flow: row;
+		list-style-type: none;
+		-webkit-padding-start: 0;
+		li {
+			flex-grow: 1;
+			-webkit-flex-grow: 1;
+		}
+		& li:first-child {
+			display: flex;
+			display: -webkit-flex;
+			-webkit-flex-flow: row;
+			-webkit-flex-flow: row;
+			align-items: center;
+			-webkit-align-items: center;
+		}
+	}
+	#motto {
+		display: flex;
+		display: -webkit-flex;
+		flex-flow: row;
+		-webkit-flex-flow: row;
+		justify-content: flex-end;
+		-webkit-justify-content: flex-end;
+	}
+	#menu {
+		display: none;
+	}
+	#nav {
+		ul {
+			display: flex;
+			display: -webkit-flex;
+			flex-flow: row;
+			-webkit-flex-flow: row;
+			li {
+				margin: 1%;
+				flex-grow: 1;
+				-webkit-flex-grow: 1;
+				a {
+					border-radius: 10px;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
 
 //@media 900
