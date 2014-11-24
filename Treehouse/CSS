@@ -1,0 +1,208 @@
+elements > properties > values
+*subtlepatterns.com
+*fittext.com
+*basehold.it
+
+.box {
+	background-color:#000; 
+	background-image: url("");
+	background-repeat: repeat-x, repeat-y, no-repeat;
+	background-position: center, left, right;
+}
+
+.fixed {
+	background-attachment: fixed;
+}
+
+.local {
+	background-attachment: local;
+}
+
+.box {
+	background: color image repeat attachment position;
+	background: ;
+}	
+
+.rounded-box {
+	width: 200px;
+	height: 200px;
+	border-top-left-radius: 50% 20%;
+	border-top-right-radius: ;
+	border-bottom-right-radius: ;
+	border-bottom-left-radius: ;
+
+	border-radius: 10 px 150px 30px 150px;
+}
+
+.box {
+	box-shadow: horizontal offset positive moves rig;
+	box-shadow: inset 0 0 10px 10px 6px 4px;
+}
+
+.sketch-img {
+	background: url("img/smiley.png") no-repeat 350px 200px, url("img/pencil.img") no-repeat, left top, url("img/texture.png") #000;
+
+}
+
+.box {
+	width: 700px;
+	height: 500px;
+	padding: 30px;
+	background: url("");
+	background-size: cover/contain;
+	border: ;
+	background-clip: padding-box;
+	background-origin: 
+}
+
+body {
+	font-size: 1.125em;
+}
+
+@media screen and (max-width: 599px) {
+	.body {
+		font-size: 1em;
+	}
+	.wrap {
+		max-width: 85%;
+	}
+}
+
+@media screen (min-width: 980) {
+	.wrap {
+		max-width: 600px;
+	}
+}
+
+FONTS
+typekit.com
+
+
+Font Icons
+symbolset.com
+pictos.cc
+icomoon.io
+
+@font-face {
+	font-family:;
+}
+
+Line Rules
+
+Use <strong> and <em> instead of <b> and <i>
+
+Hanging quote marks or bullets:
+use negative text-indent or margins
+
+HTML charactor entities 
+for quotation mars and dashes
+&ldquo; &rdquo;
+&ndash; &mdash
+&hellip; &amp;
+impressivewebs.com 
+dev.w3.com 
+
+GRADIENTS
+linear gradients 2 or more colors defined on linear line
+radial gradients
+
+background: -webkit-linear-gradient(orange, darkblue);
+default runs from top to bottom. Can change where gradient should start and end
+background: -webkit-linear-gradient(bottom, orange, darkblue);
+background: -webkit-linear-gradient(bottom, right, orange, darkblue);
+background: -webkit-linear-gradient(0deg, orange, darkblue); -define the angle where the gradient should start
+Color stops:
+background: -webkit-linear-gradient(orange, darkblue 50%, green 50%(or px length), purple);
+
+New syntax for gradients:
+background: linear-gradient(0deg, orange, darkblue, purple);
+*Have to use several codes for this for browser compatibility
+
+Radial Gradients
+Start from the center
+background: -webkit-radial-gradient(150px(or%) 50px(or%), closet-corner, #e3a112, darkblue);
+
+Radial Gradients: Unprefixed syntax
+<shape><size> at <position> color stops
+background: radial-gradient(circle farthest-side at 30% 15%, aqua, darkblue);
+*will need to include the prefixed syntax for older browsers
+
+Transparent Gradients
+
+Full background gradient:
+html {
+	height 100%
+}
+body {
+	background: -webkit-linear-gradient(hsl(218, 51%, 32%), transparent, 75%);
+}
+
+overlay on image:
+body {
+	background: -webkit-linear-gradient(hsl(218, 51%, 32%), transparent, 75%), url('bg.lu');
+	background-size: cover;
+}
+rgba(255,255,255,0) instead of transparent to get rid of grayish tone
+
+Repeating Gradients
+background: -webkit-repeating-linear-gradient(left rgba(58, 122, 187, .8), rgba(43, 79,115) 50px);
+background: -webkit-repeating-radial-gradient(0 0, circle, rgba(108, 144, 188, .8), rgb(75, 113, 160) 20px, rgba(108, 144, 188, .8) 6px);
+Gradient Generators:
+colorzilla.com/gradient-editor
+
+FLEXBOX
+Chrome and Opera support flexbox
+
+.nav {
+	display: -webkit-flex;
+	-webkit-flex-direction: row, row-reverse, column, column-reverse;
+	-webkit-justify-content: space-between, flex-end, center;
+	-web-kit-flex-wrap: wrap;
+}
+
+.nav li:first-child {
+	margin-right: auto;
+}
+
+.nav li {
+	-webkit-flex-grow: 1;
+}
+
+.col {
+	-webkit-flex: 1;
+}
+
+.col c {
+	-webkit-flex: 2;
+	-webkit-order: -1;
+}
+
+.col-b {
+	-webkit-align-self: center, flex-end, stretch;
+}
+
+@medi screen and (max-width: 999px) {
+	.main {
+		-webkit-flex-direction: column;
+	}
+}
+
+modernizer.com - gives you alternatives for flexbox for older browsers
+
+Multi-column layout 
+.main {
+	-webkit-column-gap: 3em;
+	-webkit-column-rule: 2px dotted blue;
+	-webkit-cloumns: 250px 3;
+}
+
+img {
+	display: block;
+	margin: 1.5em 0;
+	max-width: 100%;
+}
+
+h1 {
+	-webkit-column-span: all;
+	
+}

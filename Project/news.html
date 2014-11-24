@@ -1,35 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>News</title>
+	<title>Louisville Parks</title>
 	<link rel="stylesheet" href="normalize.css"/>
-	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic|PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro|Vidaloka' rel='stylesheet' type='text/css' />
 	<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-	<header>
+	<div id="container">	
+		<header id="header">
+			<ul id="logo">
+				<li>
+					<div>
+						<img src="Pics/louisville_seal2.png">
+					</div>
+					<div>
+						<h1>Louisville Metro Parks</h1>
+					</div>
+				</li>
+				<li>
+					<h1 id="motto">Play Learn Grow!</h1>
+				</li>
+			</ul>
+		</header>
 		<nav id="nav">
-				<ul id="nav_list">
-					<li>
-						<a href="index.html">Metro Parks</a>
-					</li>
-					<li>
-						<a href="parklist.html">Park List</a>
-					</li>
-					<li>
-						<a href="news.html">News</a>
-					</li>
-					<li>
-						<a href="calendar.html">Calendar</a>
-					</li>
-					<li>
-						<a href="recreation.html">Recreation</a>
-					</li>
-					<li>
-						<a href="howyoucanhelp.html">How You Can Help</a>
-					</li>
-				</ul>
-			</nav>
-	</header>
+			<ul id="nav_list">
+				<li class="selected">
+					<a href="index.html">About</a>
+				</li>
+				<li>
+					<a href="parklist.html">Park List</a>
+				</li>
+				<li>
+					<a href="news.html">News</a>
+				</li>
+				<li>
+					<a href="calendar.html">Calendar</a>
+				</li>
+				<li>
+					<a href="recreation.html">Recreation</a>
+				</li>
+				<li>
+					<a href="howyoucanhelp.html">How You Can Help</a>
+				</li>
+			</ul>
+		</nav>
+		<div id="main_body">
+			<div id="image">
+			<p>.</p>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div id="footer">
+			<p>
+				Louisville Metro Parks &#124; Louisville, KY
+			</p>
+		</div>
+	</footer>
 </body>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="modernizr.js"></script>
+<script src="jquery.js" type ="text/javascript"></script>
 </html>

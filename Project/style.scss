@@ -76,9 +76,10 @@ header {
 		p {
 			font-family: $header-text;
 			font-size: 1em;
-		}
+		} 
 		a {
-			margin: 1%;
+			border-radius: 10px;
+			padding: 1%;
 			color: $darkblue;
 			background-color: white;
 			font-family: $header-text;
@@ -86,8 +87,12 @@ header {
 			text-decoration: none;
 			justify-content: flex-start;
 			-webkit-justify-content: flex-start;
-			&:active, 
-			&:hover {
+			&:hover
+			{
+			background-color: $darkblue;
+			color: white;
+			}
+			&:active {
 				background-color: $darkblue;
 				color: white;
 			}
@@ -129,8 +134,6 @@ header {
 	padding: 2%;
 	h1 {
 		text-align: center;
-	}
-	h1 {
 		border-bottom: 1px solid darkgrey;
 	}
 }
@@ -138,8 +141,9 @@ header {
 #image {
 	margin: 2%;
 	height: 200px;
-	background-image: url("Pics/Green Leaves.jpg");
+	background-image: url("Pics/Green Leaves4.jpg");
 	background-size: cover;
+	
 }
 
 #social {
@@ -162,10 +166,92 @@ header {
 
 footer {
 	width: 100%;
-	margin: 2% 0 0 0;
 	padding: 3%;
 	background-color: $lightblue;
 }
+
+
+//How You Can Help Page
+
+#help_content {
+	align-items: center;
+	-webkit-align-items: center;
+	padding: 2%;
+	h1 {
+		text-align: center;
+		border-bottom: 1px solid darkgrey;
+	}
+}
+
+//Park List Page
+#park_content {
+	padding: 2%;
+	h1 {
+		text-align: center;
+		border-bottom: 1px solid darkgrey;
+	}
+}
+
+#parks {
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	justify-content: center;
+	-webkit-justify-content: center;
+	div {
+		padding: 3%;
+		text-align: center;
+	}
+}
+#park_header {
+}
+
+//Volunteer Form Page
+
+#main_body {
+	width: 100%;
+	form {
+		font-family: $paragraph-text;
+		font-weight: bold;
+		display: flex;
+		display: -webkit-flex;
+		flex-flow: column;
+		-webkit-flex-flow: column;
+		padding: 1%;
+		h1 {
+			margin: auto;
+		}
+		fieldset {
+			background-color: #f4f7f8;
+			margin: 1% 0;
+			input, 
+			textarea {
+				font-weight: normal;
+			}
+		}
+		button {
+			width: 60%;
+			margin: auto;
+		}
+	}
+}
+#basic_info {
+	display: flex;
+	display: -webkit-flex;
+}
+.light {
+	font-weight: normal;
+}
+#olmstead_parks {
+	margin-bottom: 2%;
+}
+#why_volunteer {
+	width: 60%;
+	height: 8em;
+}
+
+//Media Querries
 
 @media (min-width: 768px) {
 	#container {
@@ -217,6 +303,23 @@ footer {
 					text-align: center;
 				}
 			}
+		}
+	}
+	#image {
+		height: 350px;
+	}
+	#main_content {
+		display: flex;
+		display: -webkit-flex;
+		flex-flow: row;
+		-webkit-flex-flow: row;
+		align-items: flex-start;
+		-webkit-align-items: flex-start;
+		> div {
+			flex: 1 1 auto;
+			-webkit-flex: 1 1 auto;
+			width: 50%;
+			padding: 0 2%;
 		}
 	}
 }

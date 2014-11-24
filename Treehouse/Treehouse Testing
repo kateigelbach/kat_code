@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Introduction to Programmin</title>
+		<style>
+			html {
+				background: #fafafa;
+				font-family: sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Introduction to Programming</h1>
+		<h2>with JavaScript</h2>
+	</body>
+</html>

@@ -60,7 +60,8 @@ header {
       font-family: "Vidaloka", serif;
       font-size: 1em; }
     #nav ul li a {
-      margin: 1%;
+      border-radius: 10px;
+      padding: 1%;
       color: #0092d7;
       background-color: white;
       font-family: "Vidaloka", serif;
@@ -68,7 +69,10 @@ header {
       text-decoration: none;
       justify-content: flex-start;
       -webkit-justify-content: flex-start; }
-      #nav ul li a:active, #nav ul li a:hover {
+      #nav ul li a:hover {
+        background-color: #0092d7;
+        color: white; }
+      #nav ul li a:active {
         background-color: #0092d7;
         color: white; }
 
@@ -99,14 +103,13 @@ header {
   -webkit-align-items: center;
   padding: 2%; }
   #main_content h1 {
-    text-align: center; }
-  #main_content h1 {
+    text-align: center;
     border-bottom: 1px solid darkgrey; }
 
 #image {
   margin: 2%;
   height: 200px;
-  background-image: url("Pics/Green Leaves.jpg");
+  background-image: url("Pics/Green Leaves4.jpg");
   background-size: cover; }
 
 #social ul {
@@ -125,9 +128,69 @@ header {
 
 footer {
   width: 100%;
-  margin: 2% 0 0 0;
   padding: 3%;
   background-color: #92dce0; }
+
+#help_content {
+  align-items: center;
+  -webkit-align-items: center;
+  padding: 2%; }
+  #help_content h1 {
+    text-align: center;
+    border-bottom: 1px solid darkgrey; }
+
+#park_content {
+  padding: 2%; }
+  #park_content h1 {
+    text-align: center;
+    border-bottom: 1px solid darkgrey; }
+
+#parks {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  justify-content: center;
+  -webkit-justify-content: center; }
+  #parks div {
+    padding: 3%;
+    text-align: center; }
+
+#main_body {
+  width: 100%; }
+  #main_body form {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: bold;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: column;
+    -webkit-flex-flow: column;
+    padding: 1%; }
+    #main_body form h1 {
+      margin: auto; }
+    #main_body form fieldset {
+      background-color: #f4f7f8;
+      margin: 1% 0; }
+      #main_body form fieldset input,
+      #main_body form fieldset textarea {
+        font-weight: normal; }
+    #main_body form button {
+      width: 60%;
+      margin: auto; }
+
+#basic_info {
+  display: flex;
+  display: -webkit-flex; }
+
+.light {
+  font-weight: normal; }
+
+#olmstead_parks {
+  margin-bottom: 2%; }
+
+#why_volunteer {
+  width: 60%;
+  height: 8em; }
 
 @media (min-width: 768px) {
   #container {
@@ -173,6 +236,22 @@ footer {
       -webkit-flex-grow: 1; }
       #nav ul li a {
         border-radius: 10px;
-        text-align: center; } }
+        text-align: center; }
+
+  #image {
+    height: 350px; }
+
+  #main_content {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row;
+    -webkit-flex-flow: row;
+    align-items: flex-start;
+    -webkit-align-items: flex-start; }
+    #main_content > div {
+      flex: 1 1 auto;
+      -webkit-flex: 1 1 auto;
+      width: 50%;
+      padding: 0 2%; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,375 @@
+var color = "red";
+var myDiv = document.getElementById('myDiv');
+myDiv.style.background = "black";
+myDiv.style.color = "#ffffff";
+
+//A-Z a-z _ $
+//A-Z a-z 0-9 _ $
+
+var car
+var color
+var _myVariable
+var $specialName
+
+//can't use: if else function coninue switch break case catch debugger default etc...
+	class, export extends super
+	let package yeild protected private static
+
+var myVar;
+
+console.log(typeof myVar === "undefined");
+console.log(myVar === undefined);
+
+var x = null;
+
+if(myVar){
+	console.log("If");
+}
+
+var world = "World!";
+
+function sayHello() {
+	var hello = "Hello ";
+
+	function inner() {
+		var extra = " There is more!";
+		console.log(hello + world + extra);
+	}
+	inner();
+}
+
+sayHello();
+
+var name = "jim";
+console.log(name);
+var name2 = 'jim';
+console.log(name2);
+
+var statement = "This is Jim's string"
+console.log(statement);
+
+var statement2 = 'He said "This is awesome"';
+console.log(statement2);
+
+var satement3 = 'He said "This is Jim\'s string"';
+console.log(statement3);
+
+var path = "C:\\folder\\myfile.text";
+console.log(path);
+
+var multiline = "This is line 1\n" + 
+	"This \tis line 2\n" + 
+	"This is line 3";
+console.log(multiline);
+
+var part1 = "hello ";
+var part2 = "world!";
+var whole = part1 + part2;
+console.log(whole + !!!!!);
+
+var length = whole.length;
+console.log(whole, length);
+
+var index = whole.indexOf("world");
+console.log(index);
+
+var index2 = whole.indexOf("World");
+console.log(index2);
+
+if (whole.indexOf("W") !== -1){
+	console.log("W exists in string")
+} else {
+	console.log("W does not exist");
+}
+
+console.log(whole.charAt(1));
+
+var world = whole.substr(6, 5);
+
+console.log(whole.toLowerCase());
+
+var first = "Hello";
+var second = "hello";
+
+if (first.toLowerCase() === second.toLowerCase()) {
+	console.log("The strings are equal");
+} else {
+	console.log("The strings are different");
+}
+
+function compare(a, b) {
+	console.log(a + " < " + b, a < b);
+}
+
+compare('apples', 'oranges');
+compare('apples', 'applications');
+compare('app)', 'apples');
+compare();
+
+var a = 11,
+	b = -123;
+
+var c = 1.5,
+	d = 123.456789;
+
+var e = 0.1,
+	f = 0.2;
+
+var result = e * f;
+
+var g = 1.23E6;
+
+var h = 012;
+
+var j = parseInt("019", 10);
+var k = parseInt("010111", 2);
+var l parseInt("There are 23 people", 10);
+console.log(isNaN(l));
+
+var m = parseFloat("123.456 is a strange number");
+
+var o = 1 + 2.4;
+var p = 10 -7.23;
+
+var q = 3  * 4;
+var r = 15 / 10;
+
+var s = 30 % 10;
+
+var t = (1 + 2) * 3 / 4;
+
+console.log(1 !== parseInt("1", 10);
+
+if (1 < 2) {
+	console.log("Yes");
+} else {
+	console.log("No");
+};
+
+var u = Math.round(Math.random() * 10);
+var v = Math.round(2.5);
+var w = Math.floor(3.7);
+var x = Math.ceil(6.2);
+
+var y = Math.pow(2, 5);
+var z = Math.sqrt(4);
+
+var x = ["some", "extra", "words", "here"];
+console.log(x.length);
+
+var y = ["a string", 3, ["a sub array", 2, 3, 4], "treehouse", function(a, b){return a + b;}]
+
+var z = [];
+
+var a = new Array(50);
+
+var my_array = ["Hello", 42, true, function (a) {return a*2}];
+
+var word = my_array[0];
+var answer = my_array[1];
+var doubler = my_array[3];
+counsole.log(doubler(10));
+
+my_array[1] = 144;
+var new_answer = my_array[1];
+
+my_array[14] = "A new String";
+
+my_array[my_array.length] = "A new string";
+
+var my_array = [2, 3, 4];
+console.log(my_array.toString());
+
+my_array.push(5);
+console.log(my_array.toString());
+
+var value = my_array.pop()
+console.log(my_array.toString());
+
+var value2 = my_array.pop()
+console.log(my_array.toString());
+
+var my_array = [2, 3, 4]
+console.log(my_array.toString());
+
+my_array.unshift(1);
+console.log(my_array.toString());
+
+var value = my_array.shift();
+console.log(my_array.toString());
+
+my_array.sort(function (a, b){
+	//return a - b;
+	retern Math.random() - 0.5;
+});
+
+var my_array = [1, 2, 3, 4, 5];
+
+my_array.reverse();
+
+var x = [1, 2, 3];
+var y = [4, 5, 6];
+var z = x.concat(y);
+
+console.log(x);
+console.log(y);
+console.log(z);
+
+
+var my_array = [0, 1, 2, 3, 4, 5];
+var result = my_array.slice(1, 4);
+
+var words = ["these", "are", "some", "words"];
+var result = words.join(" ");
+
+var my_array = [0, 1, 2, 3, 4, 5, 6];
+my_array.splice(2, 0, "two");
+
+my_array[2] = "two";
+
+Functions
+
+function sayHello (name, greeting) {
+	if (typeof name === 'undefined') {
+		return;
+	}
+	if (typeof greeting === 'undefined'){
+		greeting = "Hello";
+	}
+	console.log(greeting + "World!" + name);
+
+	return name.length;
+	console.log("End of function");
+}
+
+console.log(sayHello("James", "Greetings"));
+
+console.log(sayHello("Jim"));
+
+console.log(sayHello ());
+
+functions have inputs and then outputs.
+
+var color = 'black';
+var number = 1;
+
+function showColor () {
+	var color = 'green';
+
+	var shape = 'square';
+
+	number = 2;
+
+	console.log('showColor color', color);
+	console.log('showColor number', number);
+
+}
+
+showColor();
+
+console.log('Global color', color);
+
+Anonymous Function. Function without a name.
+var myFunction = function () {
+	console.log('myFunction was called');
+	undeclaredVariable;
+}
+
+var callTwice = function (targetFunction) {
+	targetFunction();
+	targetFunction();
+}
+
+callTwice(function () {
+	console.log("Hello from anon function");
+	undeclaredVariable;
+});
+
+(function () {
+	var a, b, c;
+	console.log('from anon function');
+})(1, 'hello')
+
+
+Document Object Model (DOM) - Cross Browser compatibility
+
+jquery.com is helpful in providing cross browser compatibility
+
+var button = document.getElementById('action');
+var input = document.getElementById('text_field');
+
+
+//Not ideal
+b1utton.onclick = function () {
+	console.log('clicked');
+}
+
+//Better, but doesn't work in Internet Explorer
+
+button.addEventListener('click', function () {
+	console.log('clicked');
+	input.setAttribute('value', 'Hello World');
+});
+
+//Functions are useful to store code for later use. Ultimately this is how we interact with the pages. We can listen for events and then modify things on the page.
+
+//OBJECTS
+//These are data types that associate keys and values. They store many values by using a key that is defined as a string.
+
+//"key": "value"
+
+var jim = { 
+	name: "Jim", 
+	skills: ["JavaScript","Ruby", "Dancing"]
+	"favorite color": "green",
+	greet: function (name, mood) {
+		name = name || "You";
+		mood = mood || "good";
+
+		console.log("Hello, " + name +
+				"I am " + this.name + 
+				" and I am in a " + mood + " mood!");
+				},	}
+};
+
+jim.name();
+console.log(jim["favorite color"]);
+
+
+jim.greet();
+
+
+var jimGreet  = jim.greet;
+jimGreet.call({name: "Amit"}, "Matt", "bad");
+
+jim.greet.apply(nick, ["Matt", "bad"]);
+
+
+//Method: a function that is the propery of an object.
+
+//Be very careful using the 'this' variable. If not used properly it can refer to things you did not intend. Must be used very specifically. Could read from or assigning to the browser. 
+
+//Call and Apply is a built in method.
+
+//Prototypes make code cleaner
+
+
+var personPrototype = {
+	name: "Anonymouse";
+
+}
+
+function Person (name) {
+	this.name = name;
+	return this;
+}
+
+Person.prototype = personPrototype;
+
+jim = new Person("JIm");
+jim.name = "Jim";
+jim.greet();
+
+nick = new Person("Nick");
+
+//constructor function always uses a capital letter as the furst letter in the name. Remember to 
